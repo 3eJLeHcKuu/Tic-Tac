@@ -103,7 +103,7 @@ function Game() {
   return (
     <>
       <div className="game">
-        <h1 className="game-name">TIC TAC GAME</h1>
+        <h1 className="name">TIC TAC GAME</h1>
         <div className="board">
           {currentSquares.map((value, index) => (
             <button
@@ -119,7 +119,7 @@ function Game() {
           ))}
         </div>
         <div className="status">{status}</div>
-        <div className="game-info">
+        <div className="info">
           <ol>{moves}</ol>
         </div>
       </div>

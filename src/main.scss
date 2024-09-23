@@ -2,6 +2,7 @@ $background-color:#56f3db;
 $square-color:#b63ff2;
 $winner-color:white;
 @import "game";
+@import 'mixins';
 
 *{
   background: $background-color;
@@ -16,6 +17,11 @@ $winner-color:white;
   border: 4px solid #151313;
   border-radius: 12px;
   cursor: pointer;
+
+  @include mobile {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .winner{
